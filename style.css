@@ -79,6 +79,44 @@ button:hover{
     width: 567px;
 }
 
+
+/* table styles */
+.table-section{
+    width: 50%;
+    margin: 25px auto;
+    text-align: center;
+}   
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid lightgray;
+    padding: 1em;
+}
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+th{
+    background-color: #333;
+    color: white;
+}
+
+/* sponsor section */
+.sponsor{
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 25px;
+}
+.sponsor h1{
+    margin-bottom: 30px;
+}
+.sponsor img{
+    width: 10%;
+    border-radius: 50%;
+    margin: 1%;
+}
+
 /* footer style */
 footer{
     display: flex;
@@ -198,4 +236,3 @@ footer img{
         width: 200px;
     } 
 }
-
