@@ -144,8 +144,8 @@ footer img{
 }
 
 
-/* for tablets and mini laptops */
-@media only screen and (min-width: 601px) and (max-width: 1439px){
+/* for tablets and */
+@media only screen and (min-width: 601px) and (max-width: 768px){
     body{
         width: 100%;
         box-sizing: border-box;
