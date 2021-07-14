@@ -1,0 +1,201 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* For laptop */
+/* common styles */
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section {
+    padding: 2% 10%;
+}
+button{
+    background: #E02C6D;
+    color: white;
+    padding: 10px 24px;
+    border: 0;
+}
+button:hover{
+    background-image: linear-gradient(90deg,#E02C6D,#f72585);
+}
+/* top section style */
+.top-section{
+    background-color: #2d25a0;
+}
+.top-banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2D25A0;
+    color: white;
+}
+
+.top-banner h1{
+    font-size: 64px;
+}
+.fa-arrow-right{
+    margin-left: 8px;
+}
+.top-section:hover .half-width .banner-img{
+    transform: scale(0.6);
+    
+}
+.banner-img{
+    transition: transform 2s ease-in-out;
+}
+
+/* player styles */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    column-gap: 30px;
+}
+.player{
+    width: 300px;
+    padding: 15px 15px 33px;
+    box-shadow: 5px 5px 10px lightgrey;
+}
+.player h3{
+    font-size: 28px;
+}
+.player p{
+    font-size: 16px;
+}
+
+/* highlight section */
+.highlight{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.highlight .half-width h1{
+    font-size: 48px;
+}
+
+.highlight > half-width > img{
+    width: 567px;
+}
+
+/* footer style */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+footer img{
+    width: 480px;
+    height: 110px;
+}
+.footer-icon a{
+    margin-right: 14px;
+}
+
+/* For mobile */
+@media only screen and (max-width: 600px) {
+    body{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .top-section {
+        width: 100%;
+    }
+    .top-banner, .players, .highlight{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-banner .banner-img{
+        width: 330px;
+    }
+    .top-banner h1{
+        font-size: 36px;
+        width: 60%;
+    }
+    .player-section{
+        width: 330px;
+    }
+    .players{
+        width: 330px;
+    }
+    .highlight .half-width h1{
+        font-size: 30px;
+        width: 60%;
+    }
+    .highlight-img{
+        width: 100%;
+    }
+    button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img{
+        width: 200px;
+    }
+
+}
+
+
+/* for tablets and mini laptops */
+@media only screen and (min-width: 601px) and (max-width: 1439px){
+    body{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .top-banner, .highlight{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-banner .banner-img{
+        width: 330px;
+    }
+    .top-banner h1{
+        font-size: 36px;
+        width: 60%;
+    }
+    .player-section{
+        width: 70%;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+    .player{
+        width: 90%;
+    }
+    .player img{
+        width: 100%;
+    }
+    .highlight-section{
+        margin-top: 15px;
+    }
+    .highlight .half-width h1{
+        font-size: 24px;
+        width: 60%;
+    }
+    .highlight-img{
+        width: 100%;
+    }
+    button{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img{
+        width: 200px;
+    } 
+}
+
